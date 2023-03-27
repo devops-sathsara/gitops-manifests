@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://devops-sathsara.github.io/ci-cd-helm-chart
-    targetRevision: 0.0.1
+    targetRevision: 0.0.2
     chart: demo-app
   destination:
     server: https://kubernetes.default.svc
