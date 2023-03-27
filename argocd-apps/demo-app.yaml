@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/devops-sathsara/gitops-manifests.git
-    targetRevision: HEAD
-    path: demo-app
+    repoURL: https://github.com/devops-sathsara/ci-cd-helm-chart/blob/gh-pages/
+    targetRevision: 0.0.1
+    chart: demo-app
   destination:
     server: https://kubernetes.default.svc
     namespace: default
