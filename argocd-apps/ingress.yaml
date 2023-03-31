@@ -8,11 +8,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://helm.nginx.com/stable
-    targetRevision: 0.16.2
-    chart: nginx-ingress
-    helm:
-      releaseName: nginx-ingress
+    # Ingress Nginx - https://github.com/kubernetes/ingress-nginx
+    # https://grigorkh.medium.com/there-are-two-nginx-ingress-controllers-for-k8s-what-44c7b548e678
+    repoURL: https://kubernetes.github.io/ingress-nginx
+    targetRevision: 4.6.0
+    chart: ingress-nginx
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress
