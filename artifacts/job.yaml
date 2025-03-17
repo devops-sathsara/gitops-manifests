@@ -1,0 +1,14 @@
+apiVersion: batch/v1 
+kind: Job 
+metadata: 
+  name: my-job 
+spec: 
+  template:
+    spec:
+      containers: 
+      - name: print 
+        image: busybox:stable
+        command: ["echo", "This is a test"]
+      restartPolicy: Never
+  backoffLimit: 4             # number of times to retry job execution if it fails
+  activeDeadlineSeconds: 10   # number of seconds job is allowed to run
