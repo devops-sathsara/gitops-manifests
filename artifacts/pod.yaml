@@ -4,6 +4,5 @@ metadata:
   name: my-pod 
 spec: 
   containers: 
-  - name: writer 
-    image: busybox:stable 
-    command: ["echo", "This is a test"]
+  - name: nginx 
+    image: nginx:stable 
