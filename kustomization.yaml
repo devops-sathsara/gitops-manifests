@@ -5,6 +5,7 @@ resources:
 - artifacts/pod.yaml
 - artifacts/deployment.yaml
 - artifacts/job.yaml
-- artifacts/cronjob.yaml
+# - artifacts/cronjob.yaml
 - artifacts/init-container.yaml
 - artifacts/multi-container.yaml
+- artifacts/volumes.yaml

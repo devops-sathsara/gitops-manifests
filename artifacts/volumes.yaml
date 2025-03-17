@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: my-volumes
+spec:
+  containers:
+  - name: nginx
+    image: nginx:stable
+    volumeMounts: 
+    - name: host-dir 
+      mountPath: /tmp-data
+  volumes: 
+  - name: host-dir 
+    hostPath: 
+      path: /tmp 
+      type: Directory 
