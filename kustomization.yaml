@@ -9,3 +9,5 @@ resources:
 - artifacts/init-container.yaml
 - artifacts/multi-container.yaml
 - artifacts/volumes.yaml
+- artifacts/pv.yaml
+- artifacts/pvc.yaml
