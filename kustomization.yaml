@@ -11,3 +11,4 @@ resources:
 - artifacts/volumes.yaml
 - artifacts/pv.yaml
 - artifacts/pvc.yaml
+- artifacts/pod-pvc.yaml
